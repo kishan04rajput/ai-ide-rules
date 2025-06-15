@@ -27,6 +27,7 @@
         "rgba(0, 0, 128, 0.3)" // Navy
     ],
     "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
