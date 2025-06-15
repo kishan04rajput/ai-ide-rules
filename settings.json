@@ -51,5 +51,10 @@
     "git.openRepositoryInParentFolders": "never",
     "cursor.composer.backspaceRemoveContext": false,
     "cursor.diffs.useCharacterLevelDiffs": true,
-    "workbench.colorTheme": "Default High Contrast"
+    "workbench.colorTheme": "Default High Contrast",
+    "[markdown]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null,
+        "editor.formatOnType": false
+    }
 }
