@@ -1,0 +1,55 @@
+{
+    "window.commandCenter": 1,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "indentRainbow.excludedLanguages": ["plaintext"],
+    "indentRainbow.colors": [
+        "rgba(255, 0, 0, 0.3)", // Red
+        "rgba(0, 255, 0, 0.3)", // Green
+        "rgba(255, 255, 0, 0.3)", // Yellow
+        "rgba(0, 0, 0, 0.3)", // Black
+        "rgba(255, 255, 255, 0.3)", // White
+        "rgba(0, 0, 255, 0.3)", // Blue
+        "rgba(255, 0, 255, 0.3)", // Magenta
+        "rgba(0, 255, 255, 0.3)", // Cyan
+        "rgba(128, 0, 0, 0.3)", // Maroon
+        "rgba(128, 128, 0, 0.3)", // Olive
+        "rgba(0, 128, 0, 0.3)", // Dark Green
+        "rgba(128, 0, 128, 0.3)", // Purple
+        "rgba(0, 128, 128, 0.3)", // Teal
+        "rgba(0, 0, 128, 0.3)" // Navy
+    ],
+    "editor.tabSize": 4,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.ignoreMissingGitWarning": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.wordWrap": "on",
+    "terminal.integrated.scrollback": 50000,
+    "editor.stickyScroll.enabled": false,
+    "explorer.compactFolders": false,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "cursor.general.gitGraphIndexing": "enabled",
+    "cSpell.userWords": ["Actionsheet"],
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "git.ignoreRebaseWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "cursor.composer.backspaceRemoveContext": false,
+    "cursor.diffs.useCharacterLevelDiffs": true,
+    "workbench.colorTheme": "Default High Contrast"
+}
