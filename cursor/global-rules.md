@@ -29,7 +29,7 @@
 
 - list potential issues after implementing the code, if any could happen
 
-- when solvning a bug
+- when solving a bug
     - understand what the bug is, then explain it
     - detect if its
         - a logical bug
