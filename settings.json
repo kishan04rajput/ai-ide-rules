@@ -11,20 +11,11 @@
     },
     "indentRainbow.excludedLanguages": ["plaintext"],
     "indentRainbow.colors": [
-        "rgba(255, 0, 0, 0.3)", // Red
-        "rgba(0, 255, 0, 0.3)", // Green
-        "rgba(255, 255, 0, 0.3)", // Yellow
-        "rgba(0, 0, 0, 0.3)", // Black
-        "rgba(255, 255, 255, 0.3)", // White
-        "rgba(0, 0, 255, 0.3)", // Blue
-        "rgba(255, 0, 255, 0.3)", // Magenta
-        "rgba(0, 255, 255, 0.3)", // Cyan
-        "rgba(128, 0, 0, 0.3)", // Maroon
-        "rgba(128, 128, 0, 0.3)", // Olive
-        "rgba(0, 128, 0, 0.3)", // Dark Green
-        "rgba(128, 0, 128, 0.3)", // Purple
-        "rgba(0, 128, 128, 0.3)", // Teal
-        "rgba(0, 0, 128, 0.3)" // Navy
+        "rgba(0, 0, 0, 0.3)",  //black
+        "rgba(255, 0, 0, 0.3)",  //red
+        "rgba(0, 255, 0, 0.3)",   //green
+        "rgba(0, 0, 255, 0.3)",  //blue
+        "rgba(255, 255, 255, 0.3)",    //white
     ],
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
