@@ -29,6 +29,11 @@
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
     "terminal.integrated.fontSize": 14,
+    "editor.fontSize": 14,
+    "workbench.tree.indent": 14,
+    "editor.scrollbar.verticalScrollbarSize": 14,
+    "workbench.editor.titleScrollbarSizing": "large",
+    "workbench.tree.renderIndentGuides": "always",
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
