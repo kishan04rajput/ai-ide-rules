@@ -38,7 +38,7 @@
     "terminal.integrated.scrollback": 50000,
     "editor.stickyScroll.enabled": false,
     "explorer.compactFolders": false,
-    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "visible",
     "workbench.iconTheme": "vscode-icons",
     "terminal.integrated.enableMultiLinePasteWarning": false,
