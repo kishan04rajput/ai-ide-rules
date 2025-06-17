@@ -27,7 +27,7 @@
 
 - make changes with minimum amount of code required
 
-- list potential issues after implementing the code, if any could happen
+- list potential bugs and issues after implementing the code, if any could happen
 
 - when solving a bug
     - understand what the bug is, then explain it
