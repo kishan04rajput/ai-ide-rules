@@ -11,11 +11,11 @@
     },
     "indentRainbow.excludedLanguages": ["plaintext"],
     "indentRainbow.colors": [
-        "rgba(0, 0, 0, 0.3)",  //black
-        "rgba(255, 0, 0, 0.3)",  //red
-        "rgba(0, 255, 0, 0.3)",   //green
-        "rgba(0, 0, 255, 0.3)",  //blue
-        "rgba(255, 255, 255, 0.3)",    //white
+        "rgba(0, 0, 0, 0.3)", //black
+        "rgba(255, 0, 0, 0.3)", //red
+        "rgba(0, 255, 0, 0.3)", //green
+        "rgba(0, 0, 255, 0.3)", //blue
+        "rgba(255, 255, 255, 0.3)" //white
     ],
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
