@@ -40,6 +40,7 @@
 - the skeleton loading grey area should be on the potential items only, it should not be a block skeleton loading, and use smooth shimmer effect that move from left to right
 
 - when implementing shimmer animation for skeleton loading:
+  - move shimmer animation from left to right
   - create a custom AnimatedSkeleton component with the following characteristics:
     - use React Native's Animated API with useRef and useEffect
     - set animation duration to 1500ms for smooth movement
