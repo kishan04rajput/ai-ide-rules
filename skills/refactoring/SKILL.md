@@ -1,31 +1,22 @@
 ---
 name: refactoring
-description: Improving code structure without changing its external behavior. Focuses on clean code, DRY, and SOLID principles.
+description: Improving internal code structure without changing external behavior.
 ---
 
 # Refactoring Skill
 
-Use this skill when cleaning up code, reducing technical debt, or improving readability.
+Use this skill strictly for **behavior-preserving** code improvements. If you need to fix a bug or add functionality, use the `bug-fixing` or standard coding flow instead.
 
 ## Core Principles
-1.  **Behavior Preservation**: The code must do exactly the same thing before and after refactoring (verified by tests).
-2.  **Small Steps**: Make small, incremental changes.
-3.  **Green State**: Ensure tests pass after every small change.
+1.  **Zero Behavior Change**: The code MUST produce the same output for the same input after refactoring.
+2.  **Small, Reversible Steps**: Make incremental changes that can be easily reverted if a test fails.
+3.  **Clean Code Focus**: Focus on readability, maintainability (DRY, SOLID), and removing technical debt.
 
-## Common Refactoring Targets
-- **Duplicated Code**: Apply DRY (Don't Repeat Yourself). Extract functions/components.
-- **Long Functions**: Break them down into smaller, single-responsibility helpers.
-- **Magic Numbers/Strings**: Replace with named constants.
-- **Complex Conditionals**: Simplify logic, use guard clauses, or extract booleans.
-- **Naming**: Rename variables/functions to reveal intent.
-
-## Step-by-Step Process
-1.  **Identify Smell**: What is wrong? (Hard to read? Duplicated? Tightly coupled?)
-2.  **Plan**: Decide on the refactoring pattern (e.g., Extract Method, Rename Variable).
-3.  **Verify Tests**: Ensure current tests pass. If no tests exist, **write them first**.
-4.  **Execute**: Apply the refactoring.
-5.  **Verify**: Run tests again.
-6.  **Cleanup**: Remove unused code/imports.
+## Refactoring Process
+1.  **Baseline**: Ensure existing tests pass. If no tests exist, write them before refactoring.
+2.  **Identify Smells**: Long methods, dead code, logic duplication, or poor naming.
+3.  **Apply Pattern**: Use established patterns like "Extract Method", "Rename Variable", or "Simplified Conditionals".
+4.  **Verify**: Run tests after every small change to confirm no breakage.
 
 > [!TIP]
-> If a refactor breaks something and you can't fix it quickly, **revert** and try a smaller step.
+> Refactoring is a "clean as you go" process. It should make future changes easier, not change what the code does today.
