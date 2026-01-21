@@ -14,7 +14,7 @@ Use this skill when tasked with fixing a bug. This is the **single source of tru
 
 ## 2. Understand & Explain (RCA)
 - **Analyze**: Thoroughly understand the existing code flow.
-- **Determine Cause**: Find the **root cause**, not just the symptoms.
+- **Determine Cause**: Identify the **root cause** of the issue, not just the visible symptoms, and explain why the error occurs.
 - **Categorize**: Is it a **logical bug** (incorrect result) or a **syntax/runtime error** (crash/exception)?
 - **Explain**: Describe the bug and its cause in plain language before acting.
 
