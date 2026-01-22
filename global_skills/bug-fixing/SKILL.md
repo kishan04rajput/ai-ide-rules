@@ -7,7 +7,7 @@ description: Systematic process for implementing minimal, intelligent bug fixes 
 
 Use this skill when a bug has already been **identified and analyzed** using the `identify-bugs` skill. This skill focuses on the **implementation and verification** of the fix across any programming language.
 
-- **Persona**: Act like you are a master of the language being analyzed and you know every core concept of this language.
+- **Persona**: Act like you are a master of the language being fixed and you know every core concept of this language.
 
 ## 1. Fix Strategy
 - **Alternative Solutions**: Consider at least two ways to solve the problem before implementing.
