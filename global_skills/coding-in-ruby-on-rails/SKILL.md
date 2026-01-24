@@ -21,7 +21,7 @@ Follow these rules strictly when coding in Ruby on Rails to ensure a maintainabl
 ### 4. API Responses (Jbuilder)
 *   **JSON.Jbuilder**: Always use `.json.jbuilder` files for crafting API responses. Do not render complex JSON directly in controllers.
 *   **Decoupling**: Keep the response structure separate from the controller logic.
-*   **Explicit Render**: Always explicitly call `render` at the end of controller actions to specify which `.json.jbuilder` file is being used (e.g., `render :show` or `render 'users/show'`). This makes it clear which template generates the response.
+*   **Explicit Render**: If a controller uses `json.jbuilder`, always explicitly call `render` at the end of the controller action to show which file is getting rendered (e.g., `render :show` or `render 'users/show'`).
 
 ### 5. Performance (N+1 Prevention)
 *   **Eager Loading**: Always use `.includes`, `.preload`, or `.eager_load` to prevent N+1 query issues.
