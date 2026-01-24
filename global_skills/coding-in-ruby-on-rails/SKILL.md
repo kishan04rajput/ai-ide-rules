@@ -34,3 +34,24 @@ Follow these rules strictly when coding in Ruby on Rails to ensure a maintainabl
 ### 7. Coding Style & Naming
 *   **Standard Conventions**: Use `snake_case` for methods and variables, and `CamelCase` for classes/modules.
 *   **Meaningful Names**: Give variables and methods descriptive, intent-revealing names.
+
+### 8. Database & Migrations
+*   **Indexing**: Always add database indexes for foreign keys and frequently queried columns to ensure performance.
+*   **Immutable Migrations**: Never modify an existing migration file after it has been pushed. Always create a new migration to make changes.
+
+### 9. Routing
+*   **RESTful Routes**: Stick to standard RESTful resources (`resources :users`) and avoid custom actions when possible.
+*   **Shallow Nesting**: Avoid deep nesting of routes. Use `shallow: true` or break nested resources into their own top-level resources if nesting exceeds 1 level.
+
+### 10. Background Jobs
+*   **Async Processing**: Offload long-running tasks (e.g., sending emails, data processing, external API calls) to background jobs using ActiveJob.
+
+### 11. Testing
+*   **Coverage**: Write tests for critical paths, models, and services.
+*   **Factories**: Use FactoryBot for test data generation instead of fixtures for better maintainability.
+
+### 12. Error Handling
+*   **Centralized Handling**: Use `rescue_from` in `ApplicationController` to handle common exceptions (like `ActiveRecord::RecordNotFound`) and return consistent JSON error responses.
+
+### 13. Maintainability (Callbacks)
+*   **Avoid Callback Hell**: Avoid placing complex business logic in ActiveRecord callbacks (`before_save`, `after_create`). Use Service Objects to handle flows that require multiple steps to prevent side-effect loops and hard-to-debug logic.
