@@ -87,6 +87,7 @@ Follow these rules and best practices when working on React Native projects with
     *   **Logic**: If you copy-paste logic 2+ times, extract it into a utility function or custom hook.
     *   **UI**: If you copy-paste JSX 2+ times, extract it into a reusable component.
     *   **Constants**: Hardcoded strings/numbers used multiple times must be moved to a constants file.
+    *   **Utility Functions**: If a function in a file is a utility function (pure logic, no UI, reusable), generalize its name and parameters, create it in the `src/utils/` folder (e.g., `src/utils/dateUtils.ts`, `src/utils/stringUtils.ts`), and import it where needed.
 
 ## 10. Common Pitfalls to Avoid
 
