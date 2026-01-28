@@ -45,7 +45,10 @@
 
 - give relevant and meaningful names to variables, functions, classes, files, folders, etc
 
+- When writing mathematical formulas or equations, use parentheses liberally to make the structure and order of operations visually clear.
+
 - at the end
   - check the code flow, and code integrity
   - list potential bugs and issues after implementing the code, if any could happen
   - if no issues found, then write back "No potential issues and bugs found"
+
