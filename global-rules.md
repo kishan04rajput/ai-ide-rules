@@ -29,6 +29,11 @@
   - do not try to optimise unless told
   - do not run the client or server after implementing the code
 
+- When creating or updating APIs:
+  - Check if the API already exists in the codebase to prevent duplication. Adhere strictly to the DRY (Don't Repeat Yourself) principle.
+  - Do not expose sensitive data in API query parameters. Use the request body (e.g., POST) to transmit sensitive information.
+  - Ensure all sensitive data remains protected and secure.
+
 - when writing commit messages, follow this structure:
 {
   ##new commit message with "#" at start of line
