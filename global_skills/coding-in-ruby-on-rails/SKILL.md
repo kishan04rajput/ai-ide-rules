@@ -6,7 +6,7 @@ description: Follow these rules while coding in ruby on rails.
 Follow these rules strictly when coding in Ruby on Rails to ensure a maintainable, high-performance, and secure codebase.
 
 ### 1. General Rails Structure
-*   **Follow Rails Conventions**: Adhere strictly to the standard MVC architecture and Rails directory structure.
+*   **Follow Rails Conventions**: Adhere strictly to the standard MVC architecture and Rails directory structure. Follow rails convention while writing code.
 *   **The Rails Way**: Use built-in Rails features (helpers, callbacks, etc.) before implementing custom solutions.
 
 ### 2. Fat Models & Skinny Controllers
