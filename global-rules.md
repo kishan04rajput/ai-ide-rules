@@ -46,7 +46,7 @@
 }
 
 - at the end
-  - check the code flow, and code integrity
+  - check the code flow, and code integrity, and lint errors
   - list potential bugs and issues after implementing the code, if any could happen
   - if no issues found, then write back "No potential issues and bugs found"
   - double check if u have implemented all changes as per the step-by-step plan
