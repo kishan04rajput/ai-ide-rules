@@ -19,7 +19,7 @@ Follow these rules strictly when coding in Ruby on Rails to ensure a maintainabl
 *   **Business Workflows**: Use Service Objects (e.g., `app/services`) for operations that involve multiple models or complex third-party integrations.
 
 ### 4. API Responses (Jbuilder)
-*   **JSON.Jbuilder**: Always use `.json.jbuilder` files for crafting API responses. Do not render complex JSON directly in controllers.
+*   **JSON.Jbuilder**: Always use `.json.jbuilder` files for crafting API responses. Do not render JSON directly in controllers.
 *   **Decoupling**: Keep the response structure separate from the controller logic.
 *   **Explicit Render**: If a controller uses `json.jbuilder`, always explicitly call `render` at the end of the controller action to show which file is getting rendered (e.g., `render :show` or `render 'users/show'`).
 
