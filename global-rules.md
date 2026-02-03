@@ -46,6 +46,7 @@
 }
 
 - at the end
+  - delete any temporary files created during the process
   - check the code flow, and code integrity, and lint errors
   - list potential bugs and issues after implementing the code, if any could happen
   - if no issues found, then write back "No potential issues and bugs found"
