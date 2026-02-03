@@ -32,6 +32,7 @@ Follow these rules and best practices when working on React Native projects with
 
 *   **Platform Specifics**: Use `Platform.OS` or `.ios.tsx` / `.android.tsx` extensions for platform-specific variations.
 *   **Gestures**: Use `react-native-gesture-handler` for advanced gestures.
+*   **Swiping**: Use the `react-native-pager-view` package for gesture-based swiping.
 *   **Images**: Use `expo-image` for optimized image loading.
 *   **Pull to Refresh**: **Compulsory on all Screens**. Use the `refreshControl` prop on `ScrollView`.
 
