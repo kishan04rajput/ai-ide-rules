@@ -11,7 +11,7 @@ Follow these rules strictly when coding in Ruby on Rails to ensure a maintainabl
 
 ### 2. Fat Models & Skinny Controllers
 *   **Skinny Controllers**: Controllers should only handle requests (params, authentication, session) and responses (rendering, redirection). Business logic **must not** reside in controllers.
-*   **Fat Models**: Business logic, complex validations, and data transformations belong in models. If a method is used multiple times or contains complex logic, it **must** reside in its suitable model.
+*   **Fat Models**: Business logic, complex validations, and data transformations belong in models. If a method can be used multiple times or contains complex logic, it **must** reside in its suitable model.
 *   **Scopes**: Use model scopes for common database queries to keep logic reusable and readable.
 *   **Query Objects**: For complex queries involving multiple tables, use Query Objects.
 
