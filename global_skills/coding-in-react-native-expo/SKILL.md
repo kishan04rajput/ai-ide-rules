@@ -35,6 +35,9 @@ Follow these rules and best practices when working on React Native projects with
 *   **Swiping**: Use the `react-native-pager-view` package for gesture-based swiping.
 *   **Images**: Use `expo-image` for optimized image loading.
 *   **Pull to Refresh**: **Compulsory on all Screens**. Use the `refreshControl` prop on `ScrollView`.
+*   **Skeleton Loaders**: **Compulsory for Page Loading**. Use skeleton loaders with shimmer effects instead of simple spinners.
+    *   **Creation**: If a page lacks a skeleton loader, create one that mirrors the page's layout.
+    *   **Sync Maintenance**: When updating a page's UI, simultaneously update its skeleton loader to maintain visual consistency.
 
 ## 4. State & Logic
 
