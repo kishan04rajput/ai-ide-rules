@@ -38,6 +38,7 @@ Follow these rules and best practices when working on React Native projects with
 *   **Skeleton Loaders**: **Compulsory for Data Loading**. When loading data, always show skeleton loading with shimmers effect, do not show spinner.
     *   **Creation**: If a page lacks a skeleton loader, create one that mirrors the page's layout.
     *   **Sync Maintenance**: When updating a page's UI, simultaneously update its skeleton loader to maintain visual consistency.
+*   **Modals**: Modals should close when the user clicks outside of them.
 
 ## 4. State & Logic
 
