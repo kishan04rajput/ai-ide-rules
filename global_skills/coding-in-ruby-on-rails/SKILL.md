@@ -34,6 +34,7 @@ Follow these rules strictly when coding in Ruby on Rails to ensure a maintainabl
 ### 7. Coding Style & Naming
 *   **Standard Conventions**: Use `snake_case` for methods and variables, and `CamelCase` for classes/modules.
 *   **Meaningful Names**: Give variables and methods descriptive, intent-revealing names.
+*   **Class Definition**: use "class Corp::Api::HousieTeamRn::V1::StoreManager::PackersController < Corp::Api::HousieTeamRn::V1::StoreManager::BaseController" instead of nested modules
 
 ### 8. Database & Migrations
 *   **Indexing**: Always add database indexes for foreign keys and frequently queried columns to ensure performance.
