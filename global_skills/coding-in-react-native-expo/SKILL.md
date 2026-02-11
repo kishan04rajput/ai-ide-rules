@@ -17,6 +17,7 @@ Follow these rules and best practices when working on React Native projects with
 *   **Layouts**: Use `_layout.tsx` to define navigation structure (Stack, Tabs, Drawer) and wrap screens.
     *   Example: `export default function Layout() { return <Stack />; }`
 *   **Link**: Use `<Link href="/path" asChild>` from `expo-router` for navigation.
+*   **Native Directories**: **DO NOT EDIT** `android` and `ios` folders. They are recreated every time a build is created.
 
 ## 2. Components & Styling
 
