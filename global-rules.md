@@ -36,8 +36,8 @@
   - do not run the client or server after implementing the code
   - when logging something,
     - use the logging level wisely
-    - use keyword "[checkpoint] [filename]" in the log prefix to mark checkpoints in the code while debugging using logs and also use console.debug()
-    - example: console.debug("[checkpoint] [PackersScreen] WebSocket message received")
+    - use keyword "[filename]" in the log prefix
+    - example: ("[PackersScreen] WebSocket message received")
 
 - When creating or updating APIs:
   - Check if the API already exists in the codebase to prevent duplication. Adhere strictly to the DRY (Don't Repeat Yourself) principle.
