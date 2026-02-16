@@ -90,6 +90,7 @@ Follow these rules and best practices when working on React Native projects with
 ## 9. Code Quality & Principles
 
 *   **Minimalism**: Always code with the minimum amount of code that will make the feature working or resolve the bug, do not make the code bulky.
+*   **Logging**: When logging objects, always use `JSON.stringify(object, null, 2)` to print them in a readable, formatted way.
 *   **DRY (Don't Repeat Yourself)**:
     *   **Logic**: If you copy-paste logic 2+ times, extract it into a utility function or custom hook.
     *   **UI**: If you copy-paste JSX 2+ times, extract it into a reusable component.
