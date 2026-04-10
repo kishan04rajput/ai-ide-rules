@@ -85,7 +85,7 @@ Follow these rules and best practices when working on React Native projects with
     *   **Component Names**: `PascalCase` (e.g., `function UserProfile() {}`).
     *   **Variables/Functions**: `camelCase` (e.g., `updatedUser`, `fetchData()`).
     *   **Constants**: `UPPER_SNAKE_CASE` for global constants (e.g., `API_URL`).
-    *   **Types/Interfaces**: `PascalCase` (e.g., `UserData`, `AuthResponse`).
+    *   **Types/Interfaces**: `PascalCase` (e.g., `UserData`, `AuthResponse`). Prefer `type` for object shapes, unions, and generics; use `interface` only when needed (e.g., declaration merging or extending library types).
 
 ## 9. Code Quality & Principles
 
