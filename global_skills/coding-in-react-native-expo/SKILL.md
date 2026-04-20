@@ -7,6 +7,10 @@ description: Best practices and rules for coding in React Native Expo projects, 
 
 Follow these rules and best practices when working on React Native projects with Expo and Expo Router.
 
+## 0. Mandatory UI Design Rule (Always Apply)
+
+*   **Refactoring UI is Mandatory for UI Work**: For every UI creation, refactor, restructure, or edit, apply principles from the Refactoring UI book (visual hierarchy, spacing, typography, color, and consistency).
+
 ## 1. Project Structure & Routing (Expo Router)
 
 *   **File-Based Routing**: Use the `app/` directory. Files in `app/` become routes.
