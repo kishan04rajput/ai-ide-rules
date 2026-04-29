@@ -39,6 +39,7 @@ Follow these rules and best practices when working on React Native projects with
     *   **StyleSheet**: Otherwise, use `StyleSheet.create`. Avoid inline styles for performance.
 *   **Responsive**: Use `useWindowDimensions` for responsive logic if needed, but prefer flexible layouts (Flexbox).
 *   **SafeArea**: Use `SafeAreaView` from `react-native-safe-area-context` to handle notches and navigation bars properly.
+*   **TextInput**: When using a `placeholder`, always explicitly provide `placeholderTextColor` to ensure consistent behavior and appearance across Android and iOS.
 
 ## 3. UI/UX Best Practices
 
