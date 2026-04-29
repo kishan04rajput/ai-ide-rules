@@ -20,6 +20,7 @@
 - When solving a bug:
   - Explain the bug clearly.
   - Identify whether it is a logical, syntax, integration, or data/edge-case issue.
+  - Search the internet before solving the error to understand how others have resolved it and prioritize the solution that requires the minimum amount of code changes.
   - Consider multiple fix approaches and choose the safest solution with minimal, targeted code changes.
   - Preserve existing behavior unless the requirement explicitly asks for behavior change.
   - Take the case where the least amount of code is changed, and the bug can be resolved.
