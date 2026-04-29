@@ -50,7 +50,11 @@ Follow these rules and best practices when working on React Native projects with
 *   **Skeleton Loaders**: **Compulsory for Data Loading**. When loading data, always show skeleton loading with shimmers effect, do not show spinner.
     *   **Creation**: If a page lacks a skeleton loader, create one that mirrors the page's layout.
     *   **Sync Maintenance**: When updating a page's UI, simultaneously update its skeleton loader to maintain visual consistency.
-*   **Modals**: Modals should close when the user clicks outside of them.
+*   **Modals (Default Behavior)**:
+    *   **Appearance**: Modals must open from the bottom (bottom-sheet style).
+    *   **Max Height**: Modals should have a `maxHeight` of **90%** of the screen height.
+    *   **Keyboard Handling**: Modals must be wrapped in a `KeyboardAvoidingView` so that when the keyboard opens, the modal moves up and is not hidden behind the keyboard.
+    *   **Dismissal**: Modals **MUST** close when the user clicks outside of the modal area.
 
 ## 4. State & Logic
 
