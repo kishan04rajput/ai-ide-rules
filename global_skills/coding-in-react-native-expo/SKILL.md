@@ -9,7 +9,14 @@ Follow these rules and best practices when working on React Native projects with
 
 ## 0. Mandatory UI Design Rule (Always Apply)
 
-*   **Refactoring UI is Mandatory for UI Work**: For every UI creation, refactor, restructure, or edit, apply principles from the Refactoring UI book (visual hierarchy, spacing, typography, color, and consistency).
+*   **Refactoring UI is MANDATORY for ALL UI Work**: Every UI creation, edit, or refactoring **MUST** strictly adhere to the principles of the *Refactoring UI* book. Do not just make things "work"—make them look professional, premium, and visually balanced.
+    *   **Visual Hierarchy**: Use font weight (Medium/Bold), color (Grays vs. Primary), and contrast to differentiate importance. Never rely on font size alone.
+    *   **Tactical Spacing**: Use generous white space. Prefer consistent `padding` and `gap`. Avoid crowded layouts.
+    *   **Functional Color**: Use curated palettes. Use soft grays for secondary text (e.g., `#6B7280`) instead of pure black. Use depth (shadows/elevation) instead of borders.
+    *   **Typography**: Use high-quality fonts. Use `letterSpacing` and `lineHeight` to improve readability.
+    *   **Consistency**: Stick to a strict scale for spacing, font sizes, and border-radii (e.g., multiples of 4 or 8).
+    *   **Micro-interactions**: Use subtle press effects and smooth transitions to make the UI feel "alive" and responsive.
+    *   **No Placeholders**: Never use generic placeholders. Use realistic data and professional imagery (or generate them).
 
 ## 1. Project Structure & Routing (Expo Router)
 
