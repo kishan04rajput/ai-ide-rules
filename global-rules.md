@@ -29,6 +29,7 @@
   - Keep changes minimal, focused, and scoped to the task.
   - Do not modify unrelated files.
   - Use meaningful names for variables, functions, classes, files, and folders.
+  - For variables specifically: use meaningful full words; avoid abbreviations and opaque shortforms; each name should be self-explanatory so it is clear what the value represents and what it is used for.
   - Consider edge cases and failure paths.
   - Do not break existing functionality.
   - Do not optimize unless explicitly requested.
