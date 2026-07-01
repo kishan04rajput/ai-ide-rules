@@ -65,7 +65,7 @@ Wait for user confirmation if anything is ambiguous.
 Each pass follows the same skeleton:
 
 ```
-INTAKE (once) → PASS N → VERIFY → CONVERGE CHECK → PASS N+1 or STOP
+INTAKE (once) → PASS N → PLAN → WORK → VERIFY → CONVERGE CHECK → PASS N+1 or STOP
 ```
 
 ### Pass types
@@ -90,7 +90,30 @@ At the start of each pass, say:
 - What you will change in this pass
 - What you will **not** change
 
-### Step 2 — Work
+### Step 2 — Plan (before any code, every pass)
+
+**Do not write or edit code until this plan is written.**
+
+Create a **detailed, step-by-step implementation plan** for the current pass. The plan must be specific enough that another engineer could follow it without guessing.
+
+Include:
+
+1. **Goal of this pass** — one sentence tied to pass type (Implement / Optimize / Refine)
+2. **Files to read first** — which existing files/modules to inspect for patterns and context
+3. **Files to create or edit** — exact paths and what changes each file needs
+4. **Ordered steps** — numbered actions in execution order (e.g. add type → add service method → wire controller → add test)
+5. **Patterns to follow** — existing project conventions, helpers, or examples to mirror
+6. **Verification plan** — what tests or checks will run after this pass
+7. **Out of scope for this pass** — what you will deliberately not touch
+
+**Pass-specific planning:**
+
+- **Pass 1 (Implement):** Plan the full feature or fix end-to-end — data flow, layers, error handling, and tests.
+- **Pass 2+ (Optimize / Refine):** Plan only targeted simplifications — what to remove, inline, or consolidate, and why each change is safe.
+
+Only after the plan is complete, proceed to Step 3.
+
+### Step 3 — Work
 
 - **Pass 1:** Implement the feature or fix using existing conventions. Read surrounding code first.
 - **Pass 2+:** Edit only new/changed code. Candidate simplifications:
@@ -107,7 +130,7 @@ At the start of each pass, say:
 - Removing error handling or validation
 - Breaking public APIs without explicit approval
 
-### Step 3 — Verify (every pass, no exceptions)
+### Step 4 — Verify (every pass, no exceptions)
 
 Run checks appropriate to the project:
 
@@ -122,7 +145,7 @@ If verification fails:
 - Do **not** advance to the next pass until verification passes
 - If stuck after 2 fix attempts in one pass, report blocker and ask the user
 
-### Step 4 — Pass report
+### Step 5 — Pass report
 
 End each pass with:
 
@@ -217,6 +240,7 @@ When the loop stops, provide:
 - Endless rename churn — not convergence
 - Adding scope without user approval
 - Skipping verification "because the change is small"
+- Writing or editing code before completing the per-pass step-by-step plan
 
 ---
 
