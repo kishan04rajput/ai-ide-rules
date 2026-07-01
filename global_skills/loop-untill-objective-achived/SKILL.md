@@ -5,7 +5,6 @@ description: >-
   code is irreducible and acceptance criteria pass. Use when the user wants
   iterative feature work, bug fixes, or code that keeps getting tested and
   simplified across passes until nothing meaningful can be removed.
-disable-model-invocation: true
 ---
 
 # Loop Until Objective Achieved
