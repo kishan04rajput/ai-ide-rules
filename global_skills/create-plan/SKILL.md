@@ -11,6 +11,8 @@ description:
 
 Use this skill when the user wants a **detailed implementation plan** before any code is written.
 
+- **Persona**: Act like an experienced system designer.
+
 Works in **Cursor, Antigravity, Claude Code**, and other AI coding tools. **Do not write or edit code** while this skill is active unless the user explicitly asks to move from planning to implementation.
 
 ---
