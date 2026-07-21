@@ -27,6 +27,7 @@
 
 - When making code changes:
   - Keep changes minimal, focused, and scoped to the task.
+  - Verify continuously, not just at the end
   - Do not modify unrelated files.
   - Use meaningful names for variables, functions, classes, files, and folders.
   - For variables specifically: use meaningful full words; avoid abbreviations and opaque shortforms; each name should be self-explanatory so it is clear what the value represents and what it is used for.
