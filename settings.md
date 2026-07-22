@@ -31,7 +31,12 @@
     "git.ignoreMissingGitWarning": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
     "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.organizeImports": "never"
+    },
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.wordWrap": "on",
