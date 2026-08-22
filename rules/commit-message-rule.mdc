@@ -2,6 +2,7 @@
 description: Commit message format. Use when generating or writing git commit message
 alwaysApply: false
 ---
+
 - Summary line starts with `##`
 - Group changes by file path
 - Write in bullet points rather than in paragraphs
@@ -11,8 +12,6 @@ alwaysApply: false
 
 path/to/file1
 - Specific change in file 1
-- Another specific change in file 1
 
 path/to/file2
 - Specific change in file 2
-- Another specific change in file 2
