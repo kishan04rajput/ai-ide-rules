@@ -53,17 +53,6 @@
   - Never revert user changes outside the requested scope without explicit approval.
   - Do not amend commits unless explicitly requested.
 
-- When asked to write a commit message, follow this structure:
-{
-  ## New commit message
-
-  file1Path
-  - Changes made in file 1
-
-  file2Path
-  - Changes made in file 2
-}
-
 - At the end of implementation:
   - Remove temporary files created during the task.
   - Verify code flow, code integrity, and lint/type issues for changed scope.
