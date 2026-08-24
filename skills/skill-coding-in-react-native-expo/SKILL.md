@@ -7,7 +7,7 @@ description: Best practices and rules for coding in React Native Expo projects, 
 
 Follow these rules and best practices when working on React Native projects with Expo and Expo Router.
 
-## 0. Mandatory UI Design Rule (Always Apply)
+## Mandatory UI Design Rule (Always Apply)
 
 *   **Refactoring UI is MANDATORY for ALL UI Work**: Every UI creation, edit, or refactoring **MUST** strictly adhere to the principles of the *Refactoring UI* book. Do not just make things "work"—make them look professional, premium, and visually balanced.
     *   **Visual Hierarchy**: Use font weight (Medium/Bold), color (Grays vs. Primary), and contrast to differentiate importance. Never rely on font size alone.
@@ -18,7 +18,7 @@ Follow these rules and best practices when working on React Native projects with
     *   **Micro-interactions**: Use subtle press effects and smooth transitions to make the UI feel "alive" and responsive.
     *   **No Placeholders**: Never use generic placeholders. Use realistic data and professional imagery (or generate them).
 
-## 1. Project Structure & Routing (Expo Router)
+## Project Structure & Routing (Expo Router)
 
 *   **File-Based Routing**: Use the `app/` directory. Files in `app/` become routes.
     *   `index.tsx` -> `/`
@@ -30,7 +30,7 @@ Follow these rules and best practices when working on React Native projects with
 *   **Link**: Use `<Link href="/path" asChild>` from `expo-router` for navigation.
 *   **Native Directories**: **DO NOT EDIT** `android` and `ios` folders. They are recreated every time a build is created.
 
-## 2. Components & Styling
+## Components & Styling
 
 *   **Core Components**: Use `View`, `Text`, `Image`, `TouchableOpacity` from `react-native`. **Do not use HTML tags** (`div`, `p`, `img`).
 *   **Reusability**: Break UI into small, focused components. If a component is used in **2 or more files**, move it to a shared `src/components/` directory and import it.
@@ -41,13 +41,12 @@ Follow these rules and best practices when working on React Native projects with
 *   **SafeArea**: Use `SafeAreaView` from `react-native-safe-area-context` to handle notches and navigation bars properly.
 *   **TextInput**: When using a `placeholder`, always explicitly provide `placeholderTextColor` to ensure consistent behavior and appearance across Android and iOS.
 
-## 3. UI/UX Best Practices
+## UI/UX Best Practices
 
 *   **Platform Specifics**: Use `Platform.OS` or `.ios.tsx` / `.android.tsx` extensions for platform-specific variations.
 *   **Gestures**: Use `react-native-gesture-handler` for advanced gestures.
 *   **Swiping**: Use the `react-native-pager-view` package for gesture-based swiping.
 *   **Images**: Use `expo-image` for optimized image loading.
-*   **Pull to Refresh**: **Compulsory on all Screens**. Use the `refreshControl` prop on `ScrollView`.
 *   **Skeleton Loaders**: **Compulsory for Data Loading**. When loading data, always show skeleton loading with shimmers effect, do not show spinner.
     *   **Creation**: If a page lacks a skeleton loader, create one that mirrors the page's layout.
     *   **Sync Maintenance**: When updating a page's UI, simultaneously update its skeleton loader to maintain visual consistency.
@@ -56,8 +55,13 @@ Follow these rules and best practices when working on React Native projects with
     *   **Max Height**: Modals should have a `maxHeight` of **90%** of the screen height.
     *   **Keyboard Handling**: Modals must be wrapped in a `KeyboardAvoidingView` so that when the keyboard opens, the modal moves up and is not hidden behind the keyboard.
     *   **Dismissal**: Modals **MUST** close when the user clicks outside of the modal area.
+*   **Keyboard Avoiding**: Screens or modals with text inputs must use `KeyboardAvoidingView` so inputs are not hidden by the keyboard.
+    *   **Layout**: Typical stack is `SafeAreaView` → `KeyboardAvoidingView` → `ScrollView` / form content.
+    *   **Behavior**: Use platform-appropriate `behavior` — commonly `padding` on iOS; on Android `undefined`.
+    *   **Offset**: Set `keyboardVerticalOffset` when a header, tab bar, or custom nav is present.
+    *   **Reusability**: If keyboard behavior logic is repeated across screens, extract it into a shared hook in `src/hooks/`.
 
-## 4. State & Logic
+## State & Logic
 
 *   **Hooks**: Use Functional Components with Hooks (`useState`, `useEffect`, `useCallback`).
 *   **Async Storage**: Use logic inside `useEffect` or event handlers.
@@ -71,18 +75,18 @@ Follow these rules and best practices when working on React Native projects with
     4.  `useEffect` **without** dependencies
     5.  `return` (UI JSX)
 
-## 5. Performance
+## Performance
 
 *   **Lists**: ALWAYS use `FlatList` or `SectionList` for long lists. Never `map` inside a `ScrollView`.
 *   **Memoization**: Use `React.memo`, `useMemo`, and `useCallback` to prevent unnecessary re-renders.
 
-## 6. Expo APIs
+## Expo APIs
 
 *   **Installation**: Use `npx expo install package-name` to ensure version compatibility.
 *   **Permissions**: Handle permissions properly using Expo's permission hooks (e.g., `useCameraPermissions`).
 *   **Fonts**: Load fonts in the root layout using `useFonts`.
 
-## 7. API & Data Fetching
+## API & Data Fetching
 
 *   **Centralization**: All API calls must be made from the `src/services/api/` directory.
 *   **Organization**: Group endpoints by feature (e.g., `src/services/api/profile.ts`).
@@ -90,7 +94,7 @@ Follow these rules and best practices when working on React Native projects with
 *   **Priority**: **Prefer making API calls in a Context** if the data is even slightly likely to be shared. Only make calls in individual files if the data is strictly local and ephemeral.
 *   **Null Safety**: ALWAYS handle cases where API response data is `null` or empty in UI components. Show loading states or empty placeholders; never assume data exists.
 
-## 8. Naming Conventions
+## Naming Conventions
 
 *   **Files**:
     *   **Screens/Routes (`app/`)**: `kebab-case` (e.g., `src/app/handover-to-rider.tsx`).
@@ -103,7 +107,7 @@ Follow these rules and best practices when working on React Native projects with
     *   **Constants**: `UPPER_SNAKE_CASE` for global constants (e.g., `API_URL`).
     *   **Types/Interfaces**: `PascalCase` (e.g., `UserData`, `AuthResponse`). Prefer `type` for object shapes, unions, and generics; use `interface` only when needed (e.g., declaration merging or extending library types).
 
-## 9. Code Quality & Principles
+## Code Quality & Principles
 
 *   **Minimalism**: Always code with the minimum amount of code that will make the feature working or resolve the bug, do not make the code bulky.
 *   **Logging**: When logging objects, always use `JSON.stringify(object, null, 2)` to print them in a readable, formatted way.
@@ -113,7 +117,19 @@ Follow these rules and best practices when working on React Native projects with
     *   **Constants**: Hardcoded strings/numbers used multiple times must be moved to a constants file.
     *   **Utility Functions**: If a function in a file is a utility function (pure logic, no UI, reusable), generalize its name and parameters, create it in the `src/utils/` folder (e.g., `src/utils/dateUtils.ts`, `src/utils/stringUtils.ts`), and import it where needed.
 
-## 10. Common Pitfalls to Avoid
+## Screen completion checklist
+
+Before marking a screen done, verify every applicable item below:
+
+*   **Safe area** — `SafeAreaView` (or parent layout already provides it).
+*   **Skeleton loading** — shimmer placeholder on initial fetch.
+*   **Pull to refresh** — `refreshControl` on screens/modals that fetch data.
+*   **Keyboard avoiding** — `KeyboardAvoidingView` on forms with text inputs.
+*   **Empty & error states** — handle `null`, empty, and failed API responses.
+*   **Lists** — `FlatList` / `SectionList` for long or growing lists.
+*   **Project overrides** — follow repo-specific rules (e.g. `.cursor/rules/`) when they exist.
+
+## Common Pitfalls to Avoid
 
 *   ❌ Don't use `window` or `document` objects (unless inside a web-only check).
 *   ❌ Don't default to hardcoded pixel values for layout; use Flexbox.
