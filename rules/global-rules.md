@@ -59,5 +59,3 @@
   - List potential bugs or risks introduced by the change.
   - If none are found, write: "No potential issues and bugs found."
   - Confirm all requested changes are implemented according to the plan.
-
-- codex is going to review your output to make sure it is good
