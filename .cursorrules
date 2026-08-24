@@ -1,6 +1,6 @@
 When generating commit messages, use this structure exactly:
 
-## <Short imperative changes summary>
+## <Short imperative summary of all file changes>
 
 <path/to/file1>
 - <specific change in file 1>
