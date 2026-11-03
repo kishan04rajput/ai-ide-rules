@@ -70,9 +70,5 @@
     "claudeCode.hideOnboarding": true,
     "claudeCode.archiveInactiveSessions": 2,
     "claudeCode.preferredLocation": "panel",
-    "claudeCode.spinnerVerbs": {
-        "mode": "append",
-        "verbs": []
-    },
     "claudeCode.focusView": true,
 }
