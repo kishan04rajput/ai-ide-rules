@@ -41,6 +41,8 @@
         "source.organizeImports": "always",
         "source.addMissingImports": "always"
     },
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.wordWrap": "on",
