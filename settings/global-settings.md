@@ -7,7 +7,7 @@
     "files.autoSave": "onFocusChange",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "indentRainbow.excludedLanguages": ["plaintext"],
     "indentRainbow.colors": [
@@ -17,31 +17,36 @@
         "rgba(0, 0, 255, 0.3)", //blue
         "rgba(255, 255, 255, 0.3)" //white
     ],
-    "editor.tabSize": 4,
-    "prettier.tabWidth": 4,
-    "terminal.integrated.fontSize": 14,
-    "editor.fontSize": 14,
-    "workbench.tree.indent": 14,
-    "editor.scrollbar.verticalScrollbarSize": 14,
+    "editor.tabSize": 2,
+    "prettier.tabWidth": 2,
+    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 13,
+    "workbench.tree.indent": 13,
+    "editor.scrollbar.verticalScrollbarSize": 13,
     "workbench.editor.titleScrollbarSizing": "large",
+    "editor.guides.bracketPairs": "active",
+    "editor.largeFileOptimizations": false,
+    "extensions.ignoreRecommendations": false,
     "workbench.tree.renderIndentGuides": "always",
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "git.ignoreMissingGitWarning": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modifications",
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
-        "source.organizeImports": "never"
+        "source.fixAll": "always",
+        "source.organizeImports": "always",
+        "source.addMissingImports": "always"
     },
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.wordWrap": "on",
     "terminal.integrated.scrollback": 50000,
     "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
     "explorer.compactFolders": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "visible",
@@ -59,5 +64,13 @@
         "editor.formatOnSave": false,
         "editor.defaultFormatter": null,
         "editor.formatOnType": false
-    }
+    },
+    "claudeCode.hideOnboarding": true,
+    "claudeCode.archiveInactiveSessions": 2,
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.spinnerVerbs": {
+        "mode": "append",
+        "verbs": []
+    },
+    "claudeCode.focusView": true,
 }
