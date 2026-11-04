@@ -69,6 +69,6 @@
     },
     "claudeCode.hideOnboarding": true,
     "claudeCode.archiveInactiveSessions": 2,
-    "claudeCode.preferredLocation": "panel",
+    "claudeCode.preferredLocation": "sidebar",
     "claudeCode.focusView": true,
 }
