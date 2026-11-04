@@ -9,6 +9,9 @@ location: "/Users/kishanrajput/.claude/settings.json"
   "showTurnDuration": true,
   "showMessageTimestamps": true,
   "autoUpdatesChannel": "stable",
+  "env": {
+    "CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD": "1"
+  },
   "permissions": {
     "deny": ["Bash(git commit *)", "Bash(git push *)"]
   }
