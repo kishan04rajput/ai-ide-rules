@@ -2,7 +2,7 @@ location: "/Users/kishanrajput/.claude/settings.json"
 
 {
   "switchModelsOnFlag": false,
-  "outputStyle": "Default",
+  "outputStyle": "Concise",
   "model": "opus",
   "effortLevel": "medium",
   "cleanupPeriodDays": 7,
