@@ -17,6 +17,16 @@
         "rgba(0, 0, 255, 0.3)", //blue
         "rgba(255, 255, 255, 0.3)" //white
     ],
+    "workbench.colorCustomizations": {
+        "diffEditor.insertedTextBorder": "#00000000",
+        "diffEditor.removedTextBorder": "#00000000",
+        "diffEditor.insertedLineBackground": "#00FF0011",
+        "diffEditor.removedLineBackground": "#FF000022",
+        "diffEditor.insertedTextBackground": "#00FF0011",
+        "diffEditor.removedTextBackground": "#FF000022",
+        "diffEditorGutter.insertedLineBackground": "#00FF0022",
+        "diffEditorGutter.removedLineBackground": "#FF000044",
+    },
     "editor.tabSize": 2,
     "prettier.tabWidth": 2,
     "terminal.integrated.fontSize": 13,
