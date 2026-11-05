@@ -1,18 +1,22 @@
 location: "/Users/kishanrajput/.claude/settings.json"
 
 {
-  "switchModelsOnFlag": false,
-  "outputStyle": "Concise",
+  "cleanupPeriodDays": 7,
   "model": "opus",
   "effortLevel": "medium",
-  "cleanupPeriodDays": 7,
+  "outputStyle": "Concise",
+  "autoUpdatesChannel": "stable",
+  "switchModelsOnFlag": false,
   "showTurnDuration": true,
   "showMessageTimestamps": true,
-  "autoUpdatesChannel": "stable",
-  "env": {
-    "CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD": "1"
-  },
+  "inputNeededNotifEnabled": true,
+  "autoCompactEnabled": true,
   "permissions": {
     "deny": ["Bash(git commit *)", "Bash(git push *)"]
+  },
+  "env": {
+    "CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD": "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "70"
   }
 }
+
