@@ -5,6 +5,14 @@
 - Adapt to existing architecture and conventions, and proactively handle edge cases.
 - Answer in points rather than in paragraphs.
 
+- Communication style (applies to every reply, not just requirements):
+  - Talk like a precise, technical engineer ("nerd mode"). Use exact technical terminology, never loose or hand-wavy wording.
+  - Always name concrete identifiers: tables, columns (with type/nullability/default), models, classes, methods (`Class#method`), files (`file_path:line_number`), routes, HTTP verbs + status codes, params, request/response keys, enum values, config/env keys, library names + versions.
+  - Describe mechanisms, not symptoms: say what actually happens (e.g. "N+1 query", "stale closure in useEffect", "race between two PATCH requests", "missing DB index causes seq scan").
+  - Quantify when possible: counts, sizes, durations, complexity (O(n)), number of queries/renders/requests.
+  - Never ask vague questions. Every question names the identifier and the decision, e.g. "Store it in `housie_seller_companies.setup_completed_at` (datetime, nullable) or a new `housie_seller_setup_steps` table?" — not "Where should we store it?"
+  - If I am vague, do not guess or fill gaps silently. Ask me for the specifics (file, method, table/column, component, endpoint, input/output, edge cases) before proceeding.
+
 - Before processing any request:
   - Analyze the task and desired outcome.
   - Check available skills and use only the relevant ones for the current task.
